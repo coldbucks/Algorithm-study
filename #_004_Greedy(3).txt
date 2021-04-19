@@ -1,0 +1,10 @@
+n, m = map(int, input().split())
+result = 0
+
+for i in range(n):
+    data = list(map(int,input().split()))  # data list 처리!
+    min_value = min(data)                # min 펑션!
+    
+    result = max(result, min_value)     # max 펑션!
+
+print(result)
