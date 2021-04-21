@@ -1,0 +1,45 @@
+#비교 연산자
+#  > 초과
+#  < 미만
+# 이상 >=
+# 이하 <=
+# 같음 ==
+# 다름 !=
+
+def print_whether_positive_or_negative_or_zero(number):
+    if number > 0:
+        print('+')
+    elif nuber == 0:
+        print('0')
+    else:
+        print('-')
+# 숫자가 양수이면 +를. 음수이면 -를, 양수도 음수도 아닌 0일 경우 그대로 0을 출력한다.
+
+
+def print_if_positive_and_even(number):
+    if(number > 0 ) and (number % 2 == 0):
+        print(number)
+        
+# 숫자가 양수이고(and), 짝수일 때 해당 숫자를 출력합니다.
+# 양수 : number > 0
+# 짝수 : number % 2 == 0 즉 숫자를 2로 나눈 나머지가 0인 경우
+
+# while : 조건이 참인 동안 , True , False
+
+def fibonacci(n):
+    if n <= 2:
+        return 1
+    else:
+        return fibonacci(n-2) + fibonacci(n-1)
+    
+ n = 1
+
+while n <= 20:
+    print(fibonacci(n))
+    n = n + 1
+    
+print('끝!')
+
+# for : 하나씩 반복   
+
+# 하나씩 순서대로 넘길 (iterate)수 있는 값들을  반복가능한(iterable) 객체
