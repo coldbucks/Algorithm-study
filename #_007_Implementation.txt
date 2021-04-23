@@ -1,0 +1,30 @@
+# 상하좌우 , 구현 알고리즘 문제
+
+n = int(input())
+x, y = 1, 1
+plans = input().split()
+
+
+dx = [0, 0, -1, 1]   # 이 부분이 헷갈려서 설명을 계속 돌려봤다.
+dy = [-1, 1, 0, 0]   # 2차원 공간에서 '방향벡터', 2차원공간은 알고리즘 문제에서는 행렬
+
+
+move_types = ['L', 'R', 'U', 'D']
+
+for plan in plans:
+    for i in range(len(move_types)):
+        if plan == move_types[i]:
+            nx = x + dx[i]
+            ny = y + dy[i]
+            
+    if nx < 1 or ny < 1 or nx > n or ny > n:    #공간밖은 무시
+        continue
+    
+    x, y = nx, ny
+
+print(x, y)
+
+
+5
+R R R U D D
+3 4
