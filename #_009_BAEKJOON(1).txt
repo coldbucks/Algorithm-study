@@ -1,0 +1,45 @@
+BAEK JOON(1)
+
+#사칙연산
+
+A, B = map(int, input().split())
+print(A+B)
+print(A-B)
+print(A*B)
+print(A//B)
+print(A%B)
+
+7 3
+10
+4
+21
+2
+1
+
+A,B,C = map(int,input().split())
+print((A+B)%C)
+print(((A%C) + (B%C))%C)
+print((A*B)%C)
+print(((A%C)*(B%C))%C)
+
+5 8 4
+1
+1
+0
+0
+
+A,B,C = map(int,input())
+D,E,F = map(int,input())
+ABC = str(A)+str(B)+str(C)  # 문자열로 변경
+
+print(int(ABC)*F)
+print(int(ABC)*E)
+print(int(ABC)*D)
+print((int(ABC)*D*100)+(int(ABC)*E*10)+(int(ABC)*F))
+
+472
+385
+2360
+3776
+1416
+181720
