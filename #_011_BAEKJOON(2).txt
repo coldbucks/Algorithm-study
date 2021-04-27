@@ -1,0 +1,47 @@
+
+A, B = map(int, input().split())
+
+if A > B:
+    print('>')
+elif A < B:
+    print('<')
+else :
+    print('==')
+
+# if 문을 훑어보고, 알고서 넘겼는데 막상 문제로 풀어보니
+if 문법에서 
+
+if 조건문:
+    수행할 문장1
+    수행할 문장2
+    ...
+else:                           <<<  else:     여기에는 조건문 쓰는거 아니구나!!
+    수행할 문장A
+    수행할 문장B
+
+
+x = int(input())
+
+if 90 <= x <= 100:
+    print('A')
+elif 80 <= x < 90:
+    print('B')
+elif 70 <= x <= 79:
+    print('C')
+elif 60 <= x <= 69:
+    print('D')
+else:
+    print('F')
+
+# 윤년 인가? 아닌가?
+
+a = input()
+a = int(a)
+
+if a%4 == 0 and a%100!= 0:      # %, !=  이 문법에 대해 헷갈리지 말자!
+    print('1')
+elif a % 400 == 0:
+    print('1')
+else:
+    print('0')
+       
