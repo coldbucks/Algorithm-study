@@ -1,0 +1,23 @@
+
+# 알람 시간을 45분 앞서는 시간으로 바꾸는 프로그램
+(불필요한 0은 사용하지 않기)
+
+a,b=map(int,input().split())
+if b-45>=0:
+    b-=45
+else:
+    a-=1
+    b+=60
+    b-=45
+if a<0:
+    a=23
+if a!=0:
+    str(a).lstrip('0')   #lstrip 은 문자열에서만 가능
+if b!=0:
+    str(b).lstrip('0')
+if b==60:             
+    b=0
+    if a==23:
+        a=0
+
+print(int(a),int(b))
