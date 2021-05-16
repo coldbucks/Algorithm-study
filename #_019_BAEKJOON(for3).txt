@@ -1,0 +1,20 @@
+
+n이 주어졌을 때, 1부터 n까지 합을 구하는 프로그램
+
+n = int(input())
+add = 0
+
+for i in range(1, n+1):
+   add = add + i
+print(add)
+
+3
+6
+
+
+처음 add.append = i 로 하니
+
+출력값에  [1, 2, 3]으로 나와서.. 
+
+for 문 다시 공부.. add + i 하면 되는 걸 ㅜㅜ
+
