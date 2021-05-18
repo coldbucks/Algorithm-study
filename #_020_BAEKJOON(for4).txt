@@ -1,0 +1,25 @@
+빠른 A + B 
+
+import sys
+
+t = int(input())
+dic = {}
+
+for i in range(t):
+    a = list(map(int, sys.stdin.readline().split())) 
+    dic[i] = a
+for i in range(t):
+    print(dic[i][0]+dic[i][1])   
+    
+
+보충공부
+
+sys.stdin.readline 은 기존 파이썬에서 input 대비
+빠른 처리 속도를 보여주기에, 이걸 쓰라고 한다.
+
+주피너 노트북에서는 계속 에러가 나와서 수식만 변경해서
+백준에 넣었더니, 3번만에 통과 되었다.
+
+import sys 꼭 쓰고 시작하자.
+
+일단 고고
