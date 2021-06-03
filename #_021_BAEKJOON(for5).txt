@@ -1,0 +1,19 @@
+기찍 N
+
+큰 숫자부터 출력되게 하기.
+
+기존 ragnge 함수에서, reversed 원리만 한번
+한 큐에 끝.
+
+이게 바로 생각이 안났다가 , 나중에 range 안에 넣었다가
+오류 뿜뿜.
+
+for i in reversed(range(1,int(input()) + 1)):
+    print(i,sep="\n")	
+
+5
+5
+4
+3
+2
+1
