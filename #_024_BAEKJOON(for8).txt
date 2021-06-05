@@ -1,0 +1,17 @@
+* 별 찍기
+
+ 드디어 2중 for 문. 맨날 까먹는다. 다시 공책에
+10번 작성!
+
+n = int(input())
+for i in range(1,n+1):
+    for j in range(0,i):
+        print("*",end='')
+    print("")
+
+5
+*
+**
+***
+****
+*****
