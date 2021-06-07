@@ -1,0 +1,19 @@
+
+X보다 작은 수
+
+N,X=  map(int,input().split())
+num = input().split()
+result = [ ]
+for i in range(N):
+     if int(num[i]) < X:
+        result.append(int(num[i]))
+q = len(result)
+for k in range(q):
+    print (result[k], end=" ")
+
+10 5
+1 10 4 9 2 3 8 5 7 6
+1 4 2 3 
+
+# 많은 삽질과 도움말 찬스를 통해 겨우 통과 하였다.
+# append. end 파라미터 다시 확인, 코드 10번 손코딩 실시
