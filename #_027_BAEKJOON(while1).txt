@@ -1,0 +1,21 @@
+while문 A+B - 5
+
+while True:
+    a,b = map(int,input().split())
+    if (a == 0 & b ==0):
+        break;
+    print('{}'.format(a+b))
+
+1 1
+2
+2 3
+5
+3 4
+7
+9 8
+17
+5 2
+7
+0 0
+
+# while 문법 체크하기, format 다시한번 체킹하기.
