@@ -1,0 +1,13 @@
+data = 'abca'
+
+def is_palindrome(data):
+    for i in range(len(data)//2):
+        if data[i] == data[-i-1]:
+            continue
+        else:
+            print('회문이아니다!!!')
+            return
+    print('회문이다')
+
+is_palindrome(data)
+회문이아니다!!!
