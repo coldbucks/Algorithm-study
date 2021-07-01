@@ -1,0 +1,16 @@
+# 회문 판별 다시 공부하기
+
+data = 'abca'
+
+def is_palindrom(data):
+    for i in range(len(data)//2): # 0부터 문자열 길이의 절반만큼 반복
+        if data[i] == data[-i-1]: #왼쪽 문자와 오른쪽 문자를 비교
+            continue
+        else:
+            print("회문이 아니다")
+            return
+    print("회문이다")
+
+is_palindrom(data)
+
+회문이 아니다
